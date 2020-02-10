@@ -1,7 +1,7 @@
 import click
 from importlib.machinery import SourceFileLoader
 from . import config
-from . import zeit as zz
+from . import zett as zz
 
 
 def settings_option(func):
@@ -32,7 +32,7 @@ def cli(ctx, settings):
 
 @cli.command()
 @click.pass_obj
-def zeit(settings):
+def zett(settings):
     zz.new_note(settings)
 
 
